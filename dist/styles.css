@@ -116,15 +116,8 @@ nav.lesson-steps{margin-inline:6vw}
 .learning-steps{margin-top:32px}.learning-details{margin-top:32px;padding-top:24px}
 }
 
-/* A small invitation to try the lab, on the same grid as the home introduction. */
-.home-lab-preview{display:grid;grid-template-columns:minmax(140px,.65fr) minmax(0,1.65fr);gap:clamp(28px,5vw,72px);align-items:center;padding:44px max(6vw,calc((100vw - 1200px)/2));border-bottom:1px solid var(--rule)}
-.home-lab-drawing img{display:block;width:100%;max-width:260px;max-height:180px;margin:auto;object-fit:contain}
-.home-lab-copy h2{font-size:clamp(1.7rem,2.5vw,2.4rem);max-width:30ch;text-wrap:balance}
-.home-lab-copy>p{margin-top:16px;max-width:60ch;line-height:1.6}
-.home-lab-choices{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
-.home-lab-choices button{background:transparent;border:1px solid var(--rule);padding:12px 16px;min-height:48px;text-align:left;line-height:1.4;font-size:16px}
-.home-lab-choices button[aria-pressed=true]{background:var(--yellow);border-color:var(--ink)}
-.home-lab-choices button:hover{border-color:var(--red)}
-.home-lab-start{display:inline-flex;align-items:center;gap:20px;margin-top:16px;text-decoration:none;color:var(--red)}
-.home-lab-start:hover{color:var(--ink)}
-@media(max-width:760px){.home-lab-preview{grid-template-columns:1fr;padding:28px 6vw;gap:16px}.home-lab-drawing{display:none}.home-lab-copy h2{font-size:1.8rem}.home-lab-copy>p{font-size:17px;margin-top:12px}.home-lab-choices{gap:8px;margin-top:16px}.home-lab-choices button{flex:1 1 140px;font-size:15px}.home-lab-start{font-size:16px;max-width:100%}}
+/* Keep the lab visible without interrupting the introduction. */
+#header nav a[href="#lab"]{background:var(--yellow);color:var(--ink);padding:9px 12px;border-bottom:2px solid transparent}
+#header nav a[href="#lab"]:hover{background:#ded06d;border-bottom-color:var(--ink)}
+#header nav a[href="#lab"][aria-current="page"]{border-bottom-color:var(--ink)}
+@media(max-width:760px){#header nav a[href="#lab"]{padding:8px 10px;min-height:40px}}
