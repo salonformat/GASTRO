@@ -1,7 +1,8 @@
 let memory={};let storageOK=true;
 function read(key,fallback){if(Object.prototype.hasOwnProperty.call(memory,key))return memory[key];try{return JSON.parse(localStorage.getItem('gasto-'+key))??fallback}catch{return memory[key]??fallback}}
 function write(key,value){memory[key]=value;try{localStorage.setItem('gasto-'+key,JSON.stringify(value))}catch{storageOK=false}}
-let lang=read('lang','de');if(!['de','en','fr'].includes(lang))lang='de';
+const linkLang=new URLSearchParams(location.search).get('lang');
+let lang=['de','en','fr'].includes(linkLang)?linkLang:read('lang','de');if(!['de','en','fr'].includes(lang))lang='de';
 let completed=read('completed',[]);if(!Array.isArray(completed))completed=[];
 let notes=read('notes',[]);if(!Array.isArray(notes))notes=[];
 let selectedAnswers=read('answers-v2',{}),quickChoice=null,currentScene=0,pairDish=0,pairVariant=0,pairMode='wine',pairDrink=0,pairRevealed=false,aromaIndex=0,deleted=null;
