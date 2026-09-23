@@ -29,17 +29,17 @@ const ASSESSMENTS = [
       {
         "de": "Du nimmst den Gast wahr und organisierst die Begleitung. Dein Kollege kann übernehmen, ohne dass die Getränke warten.",
         "en": "You acknowledge the guest and arrange an escort. Your colleague can help while you finish the drinks.",
-        "fr": "Vous accueillez le convive et organisez son accompagnement. Votre collègue peut prendre le relais pendant que vous terminez les boissons."
+        "fr": "Vous accueillez le client, puis votre collègue l’accompagne à sa table pendant que vous terminez les boissons."
       },
       {
         "de": "Persönliche Begleitung ist aufmerksam. Hier muss der Gast aber nicht warten: Dein freier Kollege kann übernehmen.",
         "en": "A personal escort is thoughtful. Here, though, the guest need not wait: your available colleague can help.",
-        "fr": "Accompagner personnellement le convive est attentionné. Ici, votre collègue disponible peut lui éviter d’attendre."
+        "fr": "Vous pourriez l’accompagner vous-même, mais votre collègue est disponible : autant éviter de faire attendre le client."
       },
       {
         "de": "Die Richtung hilft etwas. Da der Gast seinen Tisch nicht kennt, ist eine Begleitung durch den freien Kollegen hilfreicher.",
         "en": "Directions help a little. Since the guest does not know his table, an escort by your available colleague is more helpful.",
-        "fr": "L’indication est utile, mais le convive ne connaît pas sa table. Votre collègue disponible peut l’y conduire."
+        "fr": "Le client ne sait pas quelle table lui est réservée. Votre collègue peut l’y accompagner."
       }
     ]
   },
@@ -59,7 +59,7 @@ const ASSESSMENTS = [
       {
         "de": "Welche Beilage kommt, welche Zutaten und Allergene betroffen sind und ob sich die Empfehlung ändert.",
         "en": "What the new garnish is, which ingredients and allergens are involved, and whether the recommendation changes.",
-        "fr": "Quelle est la nouvelle garniture, quels ingrédients et allergènes sont concernés et si le conseil doit être adapté."
+        "fr": "Quelle est la nouvelle garniture, quels sont ses ingrédients et ses allergènes, et ce que cela change dans ma présentation du plat."
       },
       {
         "de": "Wie die neue Beilage heißt, damit ich die Änderung am Tisch ankündigen kann.",
@@ -72,7 +72,7 @@ const ASSESSMENTS = [
       {
         "de": "Preis und Anrichten können wichtig sein. Für eine verlässliche Auskunft fehlen noch Zutaten und Allergene.",
         "en": "Price and presentation can matter. You still need ingredients and allergens to advise reliably.",
-        "fr": "Le prix et la présentation peuvent compter. Il manque encore les ingrédients et les allergènes pour conseiller correctement."
+        "fr": "Le prix et la présentation sont utiles, mais vous devez aussi connaître les ingrédients et les allergènes."
       },
       {
         "de": "Damit kannst du die Änderung verständlich erklären und weißt, was für die Beratung neu geprüft werden muss.",
@@ -115,12 +115,12 @@ const ASSESSMENTS = [
       {
         "de": "Das Ersatzglas ist richtig. Auf der Abräumstation könnte das beschädigte Glas aber wieder in den Umlauf gelangen.",
         "en": "Replacing it is right. At the clearing station, however, the damaged glass could return to circulation.",
-        "fr": "Le remplacement est nécessaire. Mais à l’office, le verre abîmé pourrait repartir dans le circuit."
+        "fr": "Vous avez raison de le remplacer, mais un verre abîmé laissé à l’office risque d’être réutilisé par erreur."
       },
       {
         "de": "Der Hinweis hilft, verschiebt aber ein vermeidbares Risiko. Nimm das Glas gleich aus dem Umlauf.",
         "en": "Telling a colleague helps, but leaves an avoidable risk. Remove the glass now.",
-        "fr": "Prévenir un collègue est utile, mais laisse subsister un risque évitable. Retirez le verre tout de suite."
+        "fr": "N’attendez pas qu’un collègue s’en occupe : écartez immédiatement le verre pour éviter un accident."
       },
       {
         "de": "So wird das Glas weder benutzt noch versehentlich erneut poliert. Die Hausregel bestimmt die sichere Entsorgung.",
@@ -134,7 +134,7 @@ const ASSESSMENTS = [
     "q": {
       "de": "Ein Gast nennt eine Nussallergie. Beim Dessert ist nur die Garnitur mit Nüssen beschrieben; die aktuelle Rezeptur liegt dir nicht vor. Was ist dein nächster Schritt?",
       "en": "A guest mentions a nut allergy. Only the dessert garnish is described as containing nuts; you do not have the current recipe. What next?",
-      "fr": "Un convive signale une allergie aux fruits à coque. Seule la garniture du dessert en mentionne ; vous n’avez pas la recette actuelle. Quelle est la suite ?"
+      "fr": "Un client signale une allergie aux fruits à coque. La carte en mentionne dans la garniture du dessert, mais vous n’avez pas la recette à jour. Que faites-vous ?"
     },
     "options": [
       {
@@ -158,7 +158,7 @@ const ASSESSMENTS = [
       {
         "de": "Erst die bestätigte Auskunft erlaubt eine verlässliche Beratung. Auch eine Alternative muss geprüft werden.",
         "en": "Verified information comes before advice. An alternative also needs checking.",
-        "fr": "Une information confirmée doit précéder le conseil. Une alternative doit également être vérifiée."
+        "fr": "Faites confirmer les informations avant de conseiller ce dessert. La même vérification est nécessaire si vous proposez autre chose."
       },
       {
         "de": "Der Vermerk ist wichtig. Ohne geprüfte Rezeptur weißt du aber nicht, ob nur die Garnitur betroffen ist.",
@@ -201,7 +201,7 @@ const ASSESSMENTS = [
       {
         "de": "Du erwartest Säure, hast sie aber noch nicht geschmeckt. Trenne Erwartung und tatsächliche Wahrnehmung.",
         "en": "You expect acidity but have not tasted it. Separate expectation from observation.",
-        "fr": "Vous vous attendez à de l’acidité, mais vous ne l’avez pas encore goûtée. Distinguez attente et perception."
+        "fr": "Vous savez qu’un citron est généralement acide, mais vous ne l’avez pas encore goûté. Décrivez ce que vous percevez, pas ce que vous supposez."
       },
       {
         "de": "Den Duft nimmst du mit der Nase wahr. Säure und ihre Dauer beurteilst du erst beim Kosten.",
@@ -211,7 +211,7 @@ const ASSESSMENTS = [
       {
         "de": "Für die Dauer brauchst du einen Eindruck im Mund. Der Duft allein sagt dir das nicht.",
         "en": "Persistence requires tasting. Smell alone cannot tell you that.",
-        "fr": "La persistance demande une dégustation en bouche. Le parfum seul ne suffit pas."
+        "fr": "Pour savoir combien de temps une sensation reste en bouche, il faut goûter. L’odeur seule ne suffit pas."
       }
     ]
   },
@@ -226,7 +226,7 @@ const ASSESSMENTS = [
       {
         "de": "Ein Wein mit komplexem Charakter und einem harmonischen Gesamtbild.",
         "en": "A wine with a complex character and a harmonious overall impression.",
-        "fr": "Un vin au caractère complexe et à l’ensemble harmonieux."
+        "fr": "C’est un vin complexe et harmonieux."
       },
       {
         "de": "Ein Wein, der besonders gut zu einem mehrgängigen Menü passt.",
@@ -236,7 +236,7 @@ const ASSESSMENTS = [
       {
         "de": "Er wirkt im Mund eher weich und voll; die Säure tritt weniger hervor.",
         "en": "It feels softer and fuller in the mouth, with less prominent acidity.",
-        "fr": "Il donne une sensation plutôt souple et ample en bouche, avec une acidité moins marquée."
+        "fr": "C’est un vin plutôt souple et ample en bouche, dont l’acidité paraît moins vive."
       }
     ],
     "answer": 2,
@@ -244,7 +244,7 @@ const ASSESSMENTS = [
       {
         "de": "Das klingt positiv, erklärt aber das Mundgefühl noch nicht. Der Gast braucht einen konkreten Unterschied.",
         "en": "This sounds positive but does not explain the mouthfeel. The guest needs a concrete distinction.",
-        "fr": "C’est positif, mais cela n’explique pas la sensation en bouche. Le convive a besoin d’une distinction concrète."
+        "fr": "Ces mots sont positifs, mais ils n’expliquent pas ce que l’on ressent en bouche."
       },
       {
         "de": "Die Eignung zum Menü hängt von den Gerichten ab. Sie erklärt nicht, was „rund“ bedeutet.",
@@ -330,7 +330,7 @@ const ASSESSMENTS = [
       {
         "de": "Die Einschränkung ist ehrlich, beantwortet aber die Frage nach diesem Fisch nicht verlässlich. Prüfe die aktuelle Lieferung.",
         "en": "The qualification is honest, but does not reliably identify this fish. Check the current delivery.",
-        "fr": "La réserve est honnête, mais ne donne pas la provenance fiable de ce poisson. Vérifiez la livraison actuelle."
+        "fr": "Vous précisez bien qu’il s’agit de la livraison précédente, mais cela ne répond pas à la question sur le poisson du jour. Vérifiez son origine."
       },
       {
         "de": "Du musst nicht jede Lieferinformation auswendig kennen. Entscheidend ist, die aktuelle Auskunft einzuholen und zurückzukommen.",
@@ -373,12 +373,12 @@ const ASSESSMENTS = [
       {
         "de": "Damit würdest du einen gewünschten Eindruck ausschließen. Fruchtduft und Süße sind unterschiedliche Eigenschaften.",
         "en": "This would remove a quality the guest likes. Fruit aroma and sweetness are different properties.",
-        "fr": "Vous écarteriez une sensation appréciée. Les arômes fruités et le sucre sont deux caractéristiques différentes."
+        "fr": "Le client apprécie les arômes fruités. Inutile de les écarter : un vin peut être fruité sans être sucré."
       },
       {
         "de": "Die Rebsorte gibt Hinweise auf Aromen, bestätigt aber nicht die Süße dieses Weins.",
         "en": "Grape variety offers aroma clues but does not establish this wine’s sweetness.",
-        "fr": "Le cépage donne des indices aromatiques, mais ne confirme pas la sucrosité de ce vin."
+        "fr": "Le cépage donne des indications sur les arômes, mais ne suffit pas à savoir si le vin est sec ou sucré."
       },
       {
         "de": "Frucht beschreibt hier das Aroma, trocken die Süße. Prüfe beides beim konkreten Wein.",
@@ -398,7 +398,7 @@ const ASSESSMENTS = [
       {
         "de": "Genügend Frische für die Butter und genug Körper für das Gericht.",
         "en": "Enough freshness for the butter and enough body for the dish.",
-        "fr": "Assez de fraîcheur pour le beurre et assez de corps pour le plat."
+        "fr": "Une acidité qui apporte de la fraîcheur avec le beurre, et assez de corps pour accompagner le plat."
       },
       {
         "de": "Möglichst ähnliche Zitrusaromen, unabhängig davon, wie kräftig der Wein ist.",
@@ -426,7 +426,7 @@ const ASSESSMENTS = [
       {
         "de": "Regionale Kombinationen können schön sein. Herkunft allein sagt aber wenig über das Zusammenspiel von Säure, Fett und Intensität.",
         "en": "Regional combinations can be lovely. Origin alone says little about acidity, fat and intensity together.",
-        "fr": "Les accords régionaux peuvent être heureux. La provenance seule renseigne peu sur l’équilibre entre acidité, gras et intensité."
+        "fr": "Un accord régional peut très bien fonctionner. Mais l’origine seule ne permet pas de juger l’équilibre entre le vin et le plat."
       }
     ]
   },
@@ -464,7 +464,7 @@ const ASSESSMENTS = [
       {
         "de": "Du nimmst den genauen Wunsch ernst und bietest eine überprüfbare Möglichkeit, ohne nach privaten Gründen zu fragen.",
         "en": "You respect the precise request and offer a verifiable option without asking for personal reasons.",
-        "fr": "Vous respectez la demande précise et proposez une option vérifiable sans demander de justification personnelle."
+        "fr": "Vous vérifiez ce que vous pouvez servir et respectez la demande du client, sans lui demander pourquoi il évite l’alcool."
       },
       {
         "de": "Der Geschmack verrät keinen verlässlichen Alkoholgehalt. Erst prüfen, dann gegebenenfalls eine Kostprobe anbieten.",
@@ -527,7 +527,7 @@ const ASSESSMENTS = [
       {
         "de": "Kurz klären, ob er heute eher etwas Leichtes oder etwas Kräftiges möchte.",
         "en": "Briefly ask whether he feels like something lighter or richer today.",
-        "fr": "Lui demander brièvement s’il préfère aujourd’hui quelque chose de léger ou de plus généreux."
+        "fr": "Lui demander s’il a envie de quelque chose de léger ou d’un plat plus généreux."
       },
       {
         "de": "Das beliebtere Gericht empfehlen, weil es vielen Gästen schmeckt.",
@@ -545,7 +545,7 @@ const ASSESSMENTS = [
       {
         "de": "Eine kurze Frage liefert eine Richtung. Danach kannst du die passenden Unterschiede nennen und eine Empfehlung begründen.",
         "en": "One short question gives direction. You can then explain relevant differences and justify your recommendation.",
-        "fr": "Une question courte donne une direction. Vous pouvez ensuite expliquer les différences utiles et motiver votre conseil."
+        "fr": "Cette question vous aide à comprendre ce qui lui ferait plaisir. Vous pouvez ensuite comparer les deux plats et expliquer votre conseil."
       },
       {
         "de": "Beliebtheit kann ein zusätzlicher Hinweis sein. Sie sagt dir noch nicht, worauf dieser Gast heute Lust hat.",
@@ -555,7 +555,7 @@ const ASSESSMENTS = [
       {
         "de": "Informationen helfen, wenn sie zur Frage passen. Kläre erst den Wunsch, damit die Beratung übersichtlich bleibt.",
         "en": "Information helps when it answers the need. Establish the preference first to keep advice manageable.",
-        "fr": "Les informations sont utiles lorsqu’elles répondent au besoin. Précisez d’abord l’envie pour garder un conseil clair."
+        "fr": "Avant d’entrer dans les détails, demandez au client ce dont il a envie. Votre explication sera plus utile."
       }
     ]
   },
@@ -588,7 +588,7 @@ const ASSESSMENTS = [
       {
         "de": "Das kann auf Wunsch passen. Ungefragt kann es den noch essenden Gast unter Zeitdruck setzen.",
         "en": "That can suit a request. Unprompted, it may make the guest still eating feel rushed.",
-        "fr": "Cela peut convenir à une demande. Sans demande, le convive qui mange encore peut se sentir pressé."
+        "fr": "Vous pouvez débarrasser si le client le demande. Sinon, celui qui mange encore risque de se sentir pressé."
       },
       {
         "de": "Du respektierst das Tempo des Tisches. Wünsche und die abgestimmten Abläufe des Hauses bleiben maßgeblich.",
@@ -598,7 +598,7 @@ const ASSESSMENTS = [
       {
         "de": "Du denkst voraus, kennst aber noch nicht den richtigen Zeitpunkt. Stimme den nächsten Gang auf den Tisch und die Küche ab.",
         "en": "You are thinking ahead but do not yet know the right timing. Coordinate the next course with the table and kitchen.",
-        "fr": "Vous anticipez, mais le bon moment n’est pas encore établi. Coordonnez la suite avec la table et la cuisine."
+        "fr": "Anticiper est utile, mais la table n’est pas encore prête pour la suite. Coordonnez l’envoi avec la cuisine."
       }
     ]
   },
@@ -623,7 +623,7 @@ const ASSESSMENTS = [
       {
         "de": "Ich suche einen kurzen passenden Moment, nenne das Gericht und seine Begleiter und halte mich knapp.",
         "en": "I find a brief suitable moment, name the dish and accompaniments, and keep it short.",
-        "fr": "Je saisis un bref moment approprié, annonce le plat et ses accompagnements, et reste concis."
+        "fr": "J’attends une courte pause dans la conversation pour présenter simplement le plat et ses accompagnements."
       }
     ],
     "answer": 2,
@@ -656,7 +656,7 @@ const ASSESSMENTS = [
       {
         "de": "Ich entschuldige mich, kläre kurz seinen Wunsch und stimme die Abhilfe mit der Küche ab.",
         "en": "I apologise, briefly clarify what he would like and coordinate a remedy with the kitchen.",
-        "fr": "Je m’excuse, précise brièvement son souhait et conviens d’une solution avec la cuisine."
+        "fr": "Je présente mes excuses, demande ce qui lui conviendrait et vois avec la cuisine quelle solution proposer."
       },
       {
         "de": "Ich räume den Teller sofort ab und lasse ein neues Gericht zubereiten.",
@@ -679,7 +679,7 @@ const ASSESSMENTS = [
       {
         "de": "Ein neues Gericht kann passen. Kläre vor dem Abräumen, ob das dem Wunsch und dem Zeitrahmen des Gastes entspricht.",
         "en": "A new dish may be appropriate. Before clearing, check that it suits the guest’s wishes and timing.",
-        "fr": "Un nouveau plat peut convenir. Avant de débarrasser, vérifiez que cela correspond au souhait et au temps disponible du convive."
+        "fr": "Refaire le plat peut être une solution. Avant de retirer l’assiette, demandez au client ce qu’il préfère et vérifiez le temps dont il dispose."
       },
       {
         "de": "Eine Geste kann später ergänzen. Zuerst braucht es eine Lösung für das eigentliche Problem; Kulanz folgt der Hausregel.",
@@ -722,7 +722,7 @@ const ASSESSMENTS = [
       {
         "de": "Du beziehst dich auf das tatsächlich servierte Produkt. Anschließend kannst du zwei passende Käse kurz unterscheiden.",
         "en": "You base advice on the actual product being served. You can then briefly distinguish two suitable cheeses.",
-        "fr": "Vous fondez le conseil sur le produit réellement servi. Vous pouvez ensuite distinguer brièvement deux fromages adaptés."
+        "fr": "Vous vérifiez les fromages disponibles aujourd’hui. Vous pourrez ainsi en proposer deux qui correspondent vraiment à sa demande."
       },
       {
         "de": "Textur und Intensität sind nicht dasselbe. Ein weicher, reifer Käse kann sehr kräftig schmecken.",
@@ -760,7 +760,7 @@ const ASSESSMENTS = [
       {
         "de": "Grüner Tee enthält Koffein. Eine kürzere Ziehzeit macht ihn nicht verlässlich koffeinfrei.",
         "en": "Green tea contains caffeine. A shorter brew does not reliably make it caffeine-free.",
-        "fr": "Le thé vert contient de la caféine. Une infusion courte ne le rend pas sûrement sans caféine."
+        "fr": "Le thé vert contient de la caféine, même lorsqu’il est peu infusé."
       },
       {
         "de": "Entkoffeinierter Kaffee kann Restkoffein enthalten. Die kleine Portion ersetzt keine genaue Auskunft.",
@@ -851,7 +851,7 @@ const ASSESSMENTS = [
       {
         "de": "Du klärst eine erkennbare Unstimmigkeit selbst, bevor sie beim Gast landet. Danach präsentierst du die geprüfte Rechnung.",
         "en": "You resolve an apparent discrepancy before passing it to the guest, then present the checked bill.",
-        "fr": "Vous clarifiez l’anomalie avant de la transmettre au convive, puis présentez l’addition vérifiée."
+        "fr": "Vous vérifiez cette ligne avec votre collègue avant de remettre l’addition au client."
       },
       {
         "de": "Der Gast darf selbstverständlich nachfragen. Eine bereits bemerkte Unstimmigkeit solltest du aber vorher intern prüfen.",
@@ -875,7 +875,7 @@ const SCENE_ASSESSMENTS = [
       {
         "de": "Darf es eher rund und weich sein? Und in welchem Preisrahmen möchten Sie bleiben?",
         "en": "Would you prefer something round and mellow? What price range would suit you?",
-        "fr": "Préférez-vous un vin rond et souple ? Quel budget souhaitez-vous prévoir ?"
+        "fr": "Préférez-vous un vin rond et souple ? Et quel budget aviez-vous en tête ?"
       },
       {
         "de": "Zur braunen Butter passt unser Chardonnay. Soll ich Ihnen eine Flasche bringen?",
@@ -961,14 +961,14 @@ const SCENE_ASSESSMENTS = [
       {
         "de": "Mögen Sie lieber etwas Fruchtiges oder feine Röstnoten? Und soll es ausdrücklich 0,0 % sein?",
         "en": "Would you prefer fruit flavours or subtle roasted notes? Do you specifically require 0.0%?",
-        "fr": "Préférez-vous des notes fruitées ou légèrement torréfiées ? Souhaitez-vous strictement 0,0 % ?"
+        "fr": "Préférez-vous une boisson fruitée ou des notes légèrement grillées ? Souhaitez-vous une boisson à 0,0 % ?"
       }
     ],
     "feedbackByChoice": [
       {
         "de": "Das ist ein begründeter Vorschlag. Noch weißt du aber nicht, ob der Gast Tee mag und welche genaue Anforderung an den Alkoholgehalt besteht.",
         "en": "This is a reasoned suggestion. You do not yet know whether the guest likes tea or the precise alcohol requirement.",
-        "fr": "La proposition est argumentée. Vous ignorez encore si le convive aime le thé et quelle est son exigence précise concernant l’alcool."
+        "fr": "Vous expliquez votre choix, mais vous ne savez pas encore si le client aime le thé ni s’il souhaite une boisson à 0,0 %."
       },
       {
         "de": "Die mildere Alternative kann gefallen. Der Gast hat aber noch keine Vorliebe genannt; frage kurz nach, statt sie anzunehmen.",
@@ -978,7 +978,7 @@ const SCENE_ASSESSMENTS = [
       {
         "de": "Du klärst zwei nützliche Punkte ohne private Gründe zu erfragen. Danach kannst du gezielt empfehlen und die Zutaten prüfen.",
         "en": "You clarify two useful points without asking for personal reasons. You can then recommend specifically and verify ingredients.",
-        "fr": "Vous précisez deux points utiles sans demander de raisons personnelles. Vous pouvez ensuite conseiller et vérifier les ingrédients."
+        "fr": "Vous précisez ses goûts et sa demande concernant l’alcool, sans lui demander de se justifier. Il reste à vérifier les ingrédients avant de le conseiller."
       }
     ]
   },
@@ -1006,17 +1006,17 @@ const SCENE_ASSESSMENTS = [
       {
         "de": "Du klärst zuerst den tatsächlichen Spielraum. Danach vereinbarst du mit dem Gast einen machbaren Ablauf.",
         "en": "You first establish what is achievable, then agree a workable plan with the guest.",
-        "fr": "Vous vérifiez d’abord les possibilités réelles, puis convenez d’un déroulement réalisable avec le convive."
+        "fr": "Vous vérifiez d’abord avec la cuisine ce qui est possible, puis proposez au client une solution adaptée à son horaire."
       },
       {
         "de": "Beschleunigen kann Teil der Lösung sein. Ohne Rücksprache weißt du aber nicht, ob Küche und Gesamtablauf das zulassen.",
         "en": "Faster service may be part of the solution. Without checking, you do not know whether the kitchen and sequence can accommodate it.",
-        "fr": "Accélérer peut faire partie de la solution. Sans concertation, vous ignorez si la cuisine et le déroulement le permettent."
+        "fr": "Accélérer le service peut aider, mais vous devez d’abord vérifier avec la cuisine si cela est possible."
       },
       {
         "de": "Ein Gang weniger kann eine vereinbarte Möglichkeit sein. Prüfe aber erst die Wartezeit, bevor du eine Einschränkung vorschlägst.",
         "en": "Skipping a course may be an agreed option. Check the actual wait before suggesting a reduction.",
-        "fr": "Supprimer un plat peut être une option convenue. Vérifiez d’abord le délai réel avant de proposer cette réduction."
+        "fr": "Le client peut accepter de renoncer à un plat. Vérifiez d’abord le temps nécessaire avec la cuisine avant de le lui proposer."
       }
     ]
   }
