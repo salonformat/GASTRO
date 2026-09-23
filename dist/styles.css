@@ -88,3 +88,30 @@ nav.lesson-steps{margin-inline:6vw}
 .lesson-row{align-items:start}.row-number{padding-top:3px}
 .actions{gap:16px}.actions .primary{max-width:100%}
 }
+/* Home: one shared editorial grid from introduction to prototype note. */
+.onboarding,.invitation,.prototype-note{--home-gutter:clamp(24px,4vw,64px);padding-inline:max(6vw,calc((100vw - 1200px)/2))}
+.onboarding .section-head{grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--home-gutter);align-items:start;margin-bottom:0}
+.onboarding .section-head h2,.onboarding .section-head p{max-width:none;margin:0}
+.onboarding .section-head p,.learning-steps p,.learning-details p{line-height:1.65;text-wrap:pretty}
+.learning-steps{grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--home-gutter);margin-top:48px}
+.learning-steps li{display:grid;grid-template-rows:subgrid;grid-row:span 3;row-gap:16px;align-content:start;padding-top:16px}
+.learning-steps h3,.learning-steps p{margin:0;max-width:none}
+.learning-steps h3{font-size:clamp(1.35rem,2vw,1.65rem);text-wrap:balance}
+.learning-details{grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--home-gutter);margin-top:40px;padding-top:32px}
+.learning-details p{margin:0}
+.invitation{padding-block:56px}
+.invitation>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px var(--home-gutter);max-width:none;align-items:start}
+.invitation h2{grid-column:1;grid-row:1 / span 2;max-width:none}
+.invitation p{grid-column:2;max-width:none;margin:0;line-height:1.65;text-wrap:pretty}
+.invitation .actions{grid-column:2;margin:0;gap:16px 24px}
+.prototype-note details>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px var(--home-gutter);max-width:none;padding-top:32px}
+.prototype-note h2{grid-column:1;grid-row:1 / span 2;margin:0}
+.prototype-note p{grid-column:2;margin:0;text-wrap:pretty}
+@media(max-width:760px){
+.onboarding .section-head,.learning-steps,.learning-details,.invitation>div,.prototype-note details>div{grid-template-columns:minmax(0,1fr);gap:24px}
+.learning-steps li{display:block;grid-row:auto;padding-top:20px}
+.learning-steps h3{font-size:1.5rem;margin:12px 0}
+.invitation h2,.invitation p,.invitation .actions,.prototype-note h2,.prototype-note p{grid-column:1;grid-row:auto}
+.invitation{padding-block:40px}
+.learning-steps{margin-top:32px}.learning-details{margin-top:32px;padding-top:24px}
+}
