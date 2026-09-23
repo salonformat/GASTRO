@@ -33,3 +33,58 @@ nav.lesson-steps{width:auto;justify-content:flex-start;flex-wrap:wrap;overflow:v
 /* Illustrations return as signatures, with mobile controls kept within easy reach. */
 .home-ink-interlude{padding:10px 8vw 25px;display:flex;justify-content:center}.home-ink-interlude img{display:block;width:min(700px,100%);height:auto}.compact-title{position:relative;padding-right:24vw}.compact-title .lesson-signature{position:absolute;right:7vw;bottom:24px;width:125px;height:130px;object-fit:contain}.notebook-examples{margin-top:32px;padding-top:24px;border-top:1px solid #cec8bb}
 @media(max-width:760px){#header nav{gap:4px 14px}.lab>.sensory-stage{grid-row:2}.lab>div:first-child{grid-row:1}.lab label{margin-top:14px}.lab select{font-size:16px;min-height:48px}.lab{padding-bottom:32px}.lab .flavour-plate{max-width:300px}.page-title{padding-top:26px;padding-bottom:24px}.page-title>p{font-size:17px;line-height:1.6;margin-top:18px}.compact-title{padding-right:6vw;padding-bottom:12px}.compact-title h1{padding-right:72px;font-size:2.2rem!important}.compact-title .lesson-signature{width:65px;height:75px;right:5vw;bottom:18px}.compact-title .lesson-position{margin-top:15px}.compact-learning{padding-top:22px}.home-ink-interlude{padding:10px 4vw 20px}.notes-form textarea{min-height:150px;height:160px}.notebook-examples li{font-size:16px}.restart-section .primary{min-height:48px}}
+
+/* Daylight photography: navy copy on a pale field, full image below copy on phones. */
+.photo-welcome{--hero-ink:#10233c;background:#eee8dc;color:var(--hero-ink);min-height:650px;padding:75px 7vw}
+.photo-welcome:before{background:linear-gradient(90deg,rgba(245,241,231,.80),rgba(245,241,231,.58) 36%,rgba(245,241,231,0) 64%)}
+.welcome-photo{object-position:center center}
+.photo-welcome-copy{max-width:47%;padding:24px 0}
+.photo-welcome h1{color:var(--hero-ink);font-size:clamp(3.5rem,5.6vw,5.5rem)}
+.photo-welcome-copy p{color:var(--hero-ink);max-width:410px}
+.photo-welcome .welcome-start{background:var(--hero-ink);color:#fffaf0;border-color:var(--hero-ink)}
+.photo-welcome .welcome-start:hover{background:var(--red);color:var(--paper);border-color:var(--red)}
+.photo-welcome a:focus-visible{outline-color:var(--red)}
+@media(max-width:760px){
+.photo-welcome{display:flex;flex-direction:column;align-items:stretch;min-height:0;padding:0;background:var(--paper)}
+.photo-welcome:before{display:none}
+.photo-welcome-copy{order:0;max-width:none;padding:32px 7vw 30px}
+.photo-welcome h1{font-size:clamp(2.65rem,11vw,3.6rem);max-width:12ch}
+.photo-welcome-copy p{font-size:18px;margin:20px 0 24px;max-width:38ch}
+.welcome-photo{position:relative;inset:auto;order:1;height:230px;width:100%;object-position:80% 60%;z-index:0}
+}
+
+/* Shared reading edges and predictable wrapping across languages. */
+h1,h2,h3{text-wrap:balance;overflow-wrap:normal;word-break:normal}
+p,li,.option,.row-title{overflow-wrap:break-word}
+.primary,.text-button{white-space:normal;text-align:left;line-height:1.45}
+.option{align-items:flex-start}.option>span:first-child{flex:0 0 1.1em}.option>span:last-child{min-width:0}
+.lab,.notebook-layout,.section-head,.source-list article{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.lab>*,.notebook-layout>*,.section-head>*,.source-list article>*{min-width:0}
+.compact-title{max-width:1000px;margin-inline:auto;padding:48px 32px 24px}
+.compact-title h1{padding-right:150px;max-width:none!important}
+.compact-title .lesson-signature{right:32px;bottom:24px}
+.lesson-steps{max-width:936px}
+.source-list article{align-items:baseline;gap:24px}
+.source-list article a{overflow-wrap:anywhere}
+.scene blockquote{max-width:28ch;text-wrap:pretty}
+.flow-dashboard .row-title{line-height:1.45}
+@media(min-width:761px) and (max-width:1040px){
+.compact-title,.compact-learning,.lesson-success{padding-inline:6vw}
+nav.lesson-steps{margin-inline:6vw}
+.chapter{grid-template-columns:190px minmax(0,1fr);gap:32px}
+.scene{grid-template-columns:180px minmax(0,1fr)}
+}
+@media(max-width:760px){
+#header nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 16px;align-items:start}
+#header nav a{white-space:normal;line-height:1.4;min-height:40px;display:flex;align-items:center;width:fit-content}
+.lab,.notebook-layout,.section-head,.source-list article{grid-template-columns:minmax(0,1fr)}
+.compact-title{padding:28px 6vw 16px}
+.compact-title h1{padding-right:76px;font-size:clamp(1.85rem,8vw,2.35rem)!important;line-height:1.2}
+.compact-title .lesson-signature{right:6vw;bottom:20px}
+.source-list article{gap:8px}
+.scenario-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.scenario-tabs button{text-align:left;line-height:1.45;min-height:48px}
+.toggle button{line-height:1.4;min-width:0}
+.lesson-row{align-items:start}.row-number{padding-top:3px}
+.actions{gap:16px}.actions .primary{max-width:100%}
+}

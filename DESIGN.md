@@ -24,3 +24,6 @@ Home now uses a warm restaurant table photograph with a restrained dark overlay 
 
 ## Mobile handoff and illustration balance
 The table drawing returns below the home introduction. A small ingredient study accompanies each lesson title, with explicit space reserved on mobile. The mobile lab puts controls before the tasting plate; notebook examples follow the editor so the save button is reached sooner. Tested at 320px and 390px in German, English and French without horizontal overflow.
+
+
+Hero update, 23 September 2026: bright daylight photograph generated for this prototype. Navy copy against pale linen/stone; mobile copy and CTA above an uncropped-in-height photographic strip. Existing ink illustrations retained.
