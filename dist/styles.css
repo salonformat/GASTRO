@@ -150,3 +150,15 @@ nav.lesson-steps{margin-inline:6vw}
 .option.selected>span:first-child::before{opacity:1}
 .photo-welcome-copy h1::after{content:"";display:block;width:clamp(64px,7vw,96px);height:9px;margin-top:20px;background:var(--yellow);border-radius:48% 30% 44% 23% / 28% 42% 26% 40%;transform:rotate(-1.5deg)}
 @media(prefers-reduced-motion:reduce){#header nav>a::before{transition:none;animation:none}}
+
+.takeaway-panel{border-top:1px solid var(--rule);padding:32px 0;margin:32px 0;max-width:900px}
+.takeaway-panel h2{font-size:clamp(1.7rem,3vw,2.4rem);margin:0 0 18px}
+.takeaway-panel>p{max-width:60ch;line-height:1.65}
+.takeaway-check{display:flex;gap:12px;align-items:flex-start;line-height:1.5;margin:24px 0}
+.takeaway-check input{accent-color:var(--ink);width:18px;height:18px;flex-shrink:0;margin-top:2px}
+.takeaway-panel .actions{flex-wrap:wrap;gap:20px 28px}
+@media(max-width:760px){.takeaway-panel .primary{white-space:normal;text-align:left}.takeaway-panel .actions{align-items:flex-start;flex-direction:column}}
+.takeaway-panel h2{color:#246778}
+.takeaway-panel .primary{background:#246778;color:var(--paper)}
+.takeaway-panel .primary:hover{background:var(--ink)}
+.photo-welcome-copy h1::after{background:#246778}
