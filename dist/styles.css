@@ -162,3 +162,6 @@ nav.lesson-steps{margin-inline:6vw}
 .takeaway-panel .primary{background:#246778;color:var(--paper)}
 .takeaway-panel .primary:hover{background:var(--ink)}
 .photo-welcome-copy h1::after{background:#246778}
+
+/* Sea blue guides the main entry and return to learning. */.photo-welcome .welcome-start,.continue-panel .primary{background:#246778;color:var(--paper);border-color:#246778}
+.photo-welcome .welcome-start:hover,.continue-panel .primary:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}
