@@ -165,3 +165,16 @@ nav.lesson-steps{margin-inline:6vw}
 
 /* Sea blue guides the main entry and return to learning. */.photo-welcome .welcome-start,.continue-panel .primary{background:#246778;color:var(--paper);border-color:#246778}
 .photo-welcome .welcome-start:hover,.continue-panel .primary:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+
+/* The step numbers sit behind the headings, like a quiet editorial imprint. */
+@media(min-width:761px){
+.learning-steps li{position:relative;isolation:isolate;grid-row:span 2;padding-top:58px}
+.learning-steps li>span{position:absolute;top:12px;left:0;z-index:-1;font-family:Della,Georgia,serif;font-size:76px;line-height:1;color:#d8a293;pointer-events:none}
+.learning-steps h3{position:relative;z-index:0;padding-left:24px}
+}
+@media(max-width:760px){.learning-steps li>span{color:var(--red)}}
+@media(min-width:600px) and (max-width:760px){
+.learning-steps li{position:relative;isolation:isolate;padding-top:58px}
+.learning-steps li>span{position:absolute;top:12px;left:0;z-index:-1;font-family:Della,Georgia,serif;font-size:76px;line-height:1;color:#d8a293;pointer-events:none}
+.learning-steps h3{position:relative;margin-top:0;padding-left:24px}
+}
